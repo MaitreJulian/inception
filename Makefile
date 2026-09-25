@@ -13,3 +13,5 @@ fclean: clean
 	rm -rf /home/jvenkata/data
 
 re: fclean all
+
+.PHONY: re fclean clean all down

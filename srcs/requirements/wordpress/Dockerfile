@@ -20,3 +20,4 @@ COPY conf/www.conf /etc/php/8.2/fpm/pool.d/www.conf
 COPY tools/scriptwp.sh .
 RUN chmod +x scriptwp.sh
 CMD ["./scriptwp.sh"]
+

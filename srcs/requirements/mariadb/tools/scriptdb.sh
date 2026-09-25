@@ -2,7 +2,7 @@
 
 service mariadb start
 
-until mysqladmin ping --silent; do
+until mariadb -u root -e "SELECT 1;" > /dev/null 2>&1; do
     sleep 1
 done
 
